@@ -2,7 +2,28 @@
   text-decoration: none;
 }
 
-#logobig {
+.navigationBar,
+.mapContainer,
+.controllerOverlay,
+body {
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+div {
+    box-sizing:border-box;
+}
+
+.topControllerBar,
+.bottomControllerBar {
+  padding: 5px;
+  width:100%;
+  margin:0px;
+}
+
+
+#logoBig {
   margin-top: -5px;
   padding-left: 10px;
   padding-top: 3px;
@@ -25,17 +46,10 @@
   padding-top: 20px;
 }
 
-.top {
+.navigationBar {
   background: #6f9b95;
-  height: 47px;
-  margin-top: -7px;
-  margin-left: -8px;
-  margin-right: -8px;
+  height: 3em;
   padding-bottom: 4px;
-}
-
-.topButtons {
-  padding-top: 5px;
 }
 
 .addButton {
@@ -68,7 +82,7 @@
   background: #fcfffd;
 }
 
-.bottomButtons {
+.bottomControllerBar {
   position: absolute;
   bottom:0;
   padding-bottom: 5px;
@@ -94,30 +108,30 @@
   background: #fcfffd;
 }
 
-.save {
-  position: inline-table;
-  float: right;
-  position:relative;
-  float:right;
-  margin-top: -30px;
+.editBlock {
+  float:left;
 }
 
-.saveButton {
-  position: inline-table;
-  width: 45px;
-  height: 28px;
+.saveBlock {
+  float:right;
+  text-align:right;
+}
+
+button {
   border: 2px solid #6f9b95;
   border-radius: 5px;
   cursor: pointer;
-  line-height: 6px;
   background: #fcfffd;
-  margin-right: 100px;
+  height: 28px;
+}
+button:active {
+  background: pink;
+}
+
+.saveButton {
+  width: 45px;
 }
 
 #saveText {
-  position: inline-table;
   color: #6f9b95;
-  font-size: 10px;
-  margin-top: -20px;
-  margin-right: -200px;
 }
