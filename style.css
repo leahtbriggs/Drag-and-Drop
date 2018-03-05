@@ -1,0 +1,123 @@
+.logo {
+  text-decoration: none;
+}
+
+#logobig {
+  margin-top: -5px;
+  padding-left: 10px;
+  padding-top: 3px;
+  color: #fcfffd;
+}
+
+#logoSmol {
+  margin-top: -29px;
+  margin-left: 24px;
+  padding-left: 10px;
+  color: #fcfffd;
+}
+
+.account {
+  text-decoration: none;
+  float: right;
+  font-weight:700;
+  color: #fcfffd;
+  padding-right: 3%;
+  padding-top: 20px;
+}
+
+.top {
+  background: #6f9b95;
+  height: 47px;
+  margin-top: -7px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 4px;
+}
+
+.topButtons {
+  padding-top: 5px;
+}
+
+.addButton {
+  width: 33px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 9px;
+  background: #fcfffd;
+}
+
+.cloneButton {
+  width: 33px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 9px;
+  background: #fcfffd;
+}
+
+.eraseButton {
+  width: 33px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 9px;
+  background: #fcfffd;
+}
+
+.bottomButtons {
+  position: absolute;
+  bottom:0;
+  padding-bottom: 5px;
+}
+
+.undoButton {
+  width: 33px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 9px;
+  background: #fcfffd;
+}
+
+.redoButton {
+  width: 33px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 9px;
+  background: #fcfffd;
+}
+
+.save {
+  position: inline-table;
+  float: right;
+  position:relative;
+  float:right;
+  margin-top: -30px;
+}
+
+.saveButton {
+  position: inline-table;
+  width: 45px;
+  height: 28px;
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 6px;
+  background: #fcfffd;
+  margin-right: 100px;
+}
+
+#saveText {
+  position: inline-table;
+  color: #6f9b95;
+  font-size: 10px;
+  margin-top: -20px;
+  margin-right: -200px;
+}
