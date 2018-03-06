@@ -2,84 +2,102 @@
   text-decoration: none;
 }
 
-.navigationBar,
-.mapContainer,
-.controllerOverlay,
-body {
+body,
+html {
     width:100%;
     padding:0px;
     margin:0px;
+    height: 100%;
+    top:0px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 div {
     box-sizing:border-box;
 }
 
+button {
+  border: 2px solid #6f9b95;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fcfffd;
+  height: 100%;
+  width: 4em;
+  outline:none;
+}
+button:active {
+  border: 2px solid;
+}
+button:hover {
+  opacity:0.8;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity:0.8;
+}
+
+.mapContainer {
+    position:absolute;
+}
+
+.controllerOverlay {
+    height:90%;
+    position:relative;
+}
+
 .topControllerBar,
 .bottomControllerBar {
   padding: 5px;
   width:100%;
+  height:7%;
   margin:0px;
 }
 
+.rightControllerBar {
+    padding: 5px;
+    height:inherit;
+    margin: 0px;
+    position: absolute;
+    top:10%;
+    right: 0px;
+}
 
+.playerListContainer {
+    margin-top: 2em;
+}
+
+.layerListContainer {
+    position: absolute;
+    bottom: 0px;
+}
+
+#logoContainer {
+    width:20%;
+    padding-left:1em;
+}
 #logoBig {
-  margin-top: -5px;
-  padding-left: 10px;
-  padding-top: 3px;
-  color: #fcfffd;
+    font-size:2em;
+}
+#logoSmall {
+    padding-left:1em;
 }
 
-#logoSmol {
-  margin-top: -29px;
-  margin-left: 24px;
-  padding-left: 10px;
-  color: #fcfffd;
-}
-
-.account {
-  text-decoration: none;
+#accountNavLink {
   float: right;
-  font-weight:700;
-  color: #fcfffd;
-  padding-right: 3%;
-  padding-top: 20px;
+  padding:0.75em;
 }
 
 .navigationBar {
   background: #6f9b95;
-  height: 3em;
+  color: #fcfffd;
+  height: 10%;
   padding-bottom: 4px;
 }
-
-.addButton {
-  width: 33px;
-  height: 28px;
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  line-height: 9px;
-  background: #fcfffd;
-}
-
-.cloneButton {
-  width: 33px;
-  height: 28px;
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  line-height: 9px;
-  background: #fcfffd;
-}
-
-.eraseButton {
-  width: 33px;
-  height: 28px;
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  line-height: 9px;
-  background: #fcfffd;
+.navigationBar a {
+  color: #fcfffd;
 }
 
 .bottomControllerBar {
@@ -88,28 +106,9 @@ div {
   padding-bottom: 5px;
 }
 
-.undoButton {
-  width: 33px;
-  height: 28px;
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  line-height: 9px;
-  background: #fcfffd;
-}
-
-.redoButton {
-  width: 33px;
-  height: 28px;
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  line-height: 9px;
-  background: #fcfffd;
-}
-
 .editBlock {
   float:left;
+  height:100%;
 }
 
 .saveBlock {
@@ -117,21 +116,14 @@ div {
   text-align:right;
 }
 
-button {
-  border: 2px solid #6f9b95;
-  border-radius: 5px;
-  cursor: pointer;
-  background: #fcfffd;
-  height: 28px;
-}
-button:active {
-  background: pink;
-}
-
-.saveButton {
-  width: 45px;
-}
-
 #saveText {
   color: #6f9b95;
+}
+
+.playerStatus {
+    color:red;
+}
+
+.playerStatus.online {
+    color:green;
 }
