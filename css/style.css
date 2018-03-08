@@ -41,6 +41,9 @@ a:hover {
 
 .mapContainer {
     position:absolute;
+    height:90%;
+    width:100%;
+    top:10%;
 }
 
 .controllerOverlay {
@@ -126,4 +129,12 @@ a:hover {
 
 .playerStatus.online {
     color:green;
+}
+
+/*
+ * TODO: Replace this with intelligent SVGs.
+ */
+.mapContainer {
+    background-image: url("http://mathworld.wolfram.com/images/eps-gif/HexagonalGrid_700.gif");
+    background-repeat: repeat;
 }
